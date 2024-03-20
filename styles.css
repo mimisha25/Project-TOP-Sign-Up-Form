@@ -1,0 +1,93 @@
+.phone, .one, .three, .four, .two{
+    width: 530px;
+    height:700px;
+    display: none;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    border: 0.5px grey solid;
+    padding: 40px;
+}
+
+#logo{
+    width:180px;
+    height:65px;
+    background-image: url(https://static.cdninstagram.com/rsrc.php/v3/yh/r/IS7e616CiR2.png);
+    background-size: 180px;
+    margin: auto;
+}
+.p1{
+    color: rgb(95, 93, 93);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    
+}
+.p2{
+    color: rgb(95, 93, 93);
+    font-size: 0.9rem;
+    text-align: center;
+}
+button{
+    background-color: rgb(36, 137, 245);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+}
+input{
+    height: 30px;
+    margin: 5px 0px;
+    border: 0.5px gray solid;
+}
+a{
+    text-decoration: none;
+}
+
+.or{
+    text-align: center;
+    color: rgb(124, 122, 122);
+    font-weight: 600;
+
+}
+.or:before{
+    content:" ";
+    height: 1px;
+    width: 80px;
+    background: rgb(166, 163, 163);
+    display: block;
+    position: absolute;
+    top: 35.5%;
+    left: 75px;
+}
+.or:after{
+    content:" ";
+    height: 1px;
+    width: 80px;
+    background: rgb(166, 163, 163);
+    display: block;
+    position: absolute;
+    top: 35.5%;
+    left:220px;
+}
+input[placeholder]{
+padding:5px;
+}
+
+.form2{
+    display: flex;
+    flex-direction: column;
+    width: 348px;
+    border: 0.5px grey solid;
+    padding: 6px;
+    text-align: center;
+    margin-top: 10px;
+}
+.log{
+    text-decoration: none;
+    color:rgb(12, 94, 182);
+}
