@@ -180,6 +180,42 @@ input:user-invalid{
 }
 
 
+/* Section under main Form */
+.form2 {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    border: 0.5px grey solid;
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.log {
+    text-decoration: none;
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+}
+
+.text {
+    text-align: center;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.appstore {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.appstore img {
+    width: 140px;
+    height: 40px;
+}
 
 
 
