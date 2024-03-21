@@ -4,7 +4,38 @@
     margin: 40px 285px;
 }
 
-
+/*  Iphone image and slides */
+.iphone-img {
+    margin-top: 105px;
+}
+.phone {
+    width: 470px;
+    height: 640px;
+}
+.slides img {
+    position: absolute;
+    top: 170px;
+    left: 450px;
+    width: 255px;
+    height: 550px;
+    border-radius: 23px;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.2;
+    }
+}
 
 
 
