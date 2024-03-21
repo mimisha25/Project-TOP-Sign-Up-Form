@@ -1,3 +1,13 @@
+
+:root{
+    --color-text: rgb(115, 115, 115);
+    --color-input:rgb(250, 250, 250);
+    --bg-or:rgb(166, 163, 163);
+}
+*{
+    font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+}
+
 .main {
     display: flex;
     flex-direction: row;
@@ -56,52 +66,44 @@
     margin: auto;
 }
 .p1 {
-    color: rgb(115, 115, 115);
+    color: var(--color-text);
     font-weight: 600;
     font-size: 16px;
     text-align: center;
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     line-height: 20px;
 }
 
 .p2 {
-    color: rgb(115, 115, 115);
+    color: var(--color-text);
     font-size: 12px;
     text-align: center;
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     line-height: 16px;
     font-weight: 400;
 }
 
 .or {
     text-align: center;
-    color: rgb(115, 115, 115);
+    color: var(--color-text);
     font-weight: 600;
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     margin-left: 18px;
     margin-right: 18px;
 }
 
-.or:before {
-    content: " ";
-    height: 1px;
-    width: 80px;
-    background: rgb(166, 163, 163);
-    display: block;
-    position: absolute;
-    top: 34.5%;
-    left: 970px;
-}
-
+.or:before,
 .or:after {
     content: " ";
     height: 1px;
     width: 80px;
-    background: rgb(166, 163, 163);
+    background: var(--bg-or);
     display: block;
     position: absolute;
     top: 34.5%;
+}
+.or:before{
+    left: 970px;
+}
+.or:after {
     left: 820px;
 }
 a{
@@ -131,19 +133,18 @@ button img {
     margin-top: 20px;
     width: 100%;
     border: 0.5px gray solid;
-    background-color: rgb(250, 250, 250);
+    background-color: var(--color-input);
     height: 33px;
 }
 
 .input_box input {
-    background-color: rgb(250, 250, 250);
+    background-color: var(--color-input);
     border: none;
     outline: none;
     margin-top: 12px;
     margin-left: 3px;
     font-size: 12px;
     width: 97%;
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .input_box label {
@@ -151,8 +152,7 @@ button img {
     top: 9px;
     position: absolute;
     font-size: 12px;
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    color: rgb(115, 115, 115);
+    color: var(--color-text);
     pointer-events: none;
     transition: 0.2s;
 }
@@ -160,17 +160,17 @@ button img {
 
 
 /* Validations of input */
-input:valid{
-    background-image: url(./images/check.png);
+input:valid,
+input:user-invalid{
     background-size: 23px;
     background-position: 245px;
     background-repeat: no-repeat;
 }
+input:valid{
+    background-image: url(./images/check.png);
+}
 input:user-invalid{
     background-image: url(./images/invalid.png);
-    background-size: 22px;
-    background-position: 245px;
-    background-repeat: no-repeat;
 }
 .input_box input:focus+label,
 .input_box input:valid+label,
@@ -189,7 +189,6 @@ input:user-invalid{
     padding: 8px;
     text-align: center;
     margin-top: 10px;
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -201,7 +200,6 @@ input:user-invalid{
 
 .text {
     text-align: center;
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -228,9 +226,8 @@ footer {
 }
 
 .copyright1 {
-    color: rgb(115, 115, 115);
+    color: var(--color-text);
     font-size: 12px;
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     text-align: center;
 }
 li {
@@ -238,9 +235,9 @@ li {
 }
 
 .li a {
-    color: rgb(115, 115, 115);
+    color: var(--color-text);
     font-size: 12px;
-    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    list-style-type: none;
 }
 
 ul {
