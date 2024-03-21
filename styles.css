@@ -1,43 +1,66 @@
-.phone, .one, .three, .four, .two{
-    width: 530px;
-    height:700px;
+.main{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 285px;
+}
+
+.one, .three, .four, .two
+{
     display: none;
+}
+
+
+.iphone-img{
+    margin-top:105px;
+}
+.phone {
+    width: 470px;
+    height:640px;
+  
 }
 .form1{
     display: flex;
     flex-direction: column;
     width: 280px;
     border: 0.5px grey solid;
-    padding: 40px;
+    padding: 50px 30px 30px;
 }
 
 #logo{
     width:180px;
-    height:65px;
+    height:53px;
     background-image: url(https://static.cdninstagram.com/rsrc.php/v3/yh/r/IS7e616CiR2.png);
     background-size: 180px;
     margin: auto;
 }
 .p1{
-    color: rgb(95, 93, 93);
-    font-weight: 700;
-    font-size: 1.1rem;
+    color: rgb(115, 115, 115);
+    font-weight: 600;
+    font-size: 16px;
     text-align: center;
-    
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 20px;
 }
 .p2{
-    color: rgb(95, 93, 93);
-    font-size: 0.9rem;
+    color: rgb(115, 115, 115);
+    font-size: 12px;
     text-align: center;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 16px;
+    font-weight: 400;
 }
 button{
-    background-color: rgb(36, 137, 245);
+    background-color: rgb(0, 149, 246);
     color: white;
     border-radius: 10px;
     text-align: center;
     font-weight: 700;
-    padding: 10px;
+    padding: 10px 16px;
     border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 5px;
+    
 }
 input{
     height: 30px;
@@ -50,9 +73,12 @@ a{
 
 .or{
     text-align: center;
-    color: rgb(124, 122, 122);
+    color: rgb(115, 115, 115);
     font-weight: 600;
-
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+font-size: 13px;
+margin-left: 18px;
+margin-right: 18px;
 }
 .or:before{
     content:" ";
@@ -61,8 +87,9 @@ a{
     background: rgb(166, 163, 163);
     display: block;
     position: absolute;
-    top: 35.5%;
-    left: 75px;
+
+    top: 34.5%;
+    left: 970px;
 }
 .or:after{
     content:" ";
@@ -71,8 +98,8 @@ a{
     background: rgb(166, 163, 163);
     display: block;
     position: absolute;
-    top: 35.5%;
-    left:220px;
+    top: 34.5%;
+    left:820px;
 }
 input[placeholder]{
 padding:5px;
@@ -81,13 +108,32 @@ padding:5px;
 .form2{
     display: flex;
     flex-direction: column;
-    width: 348px;
+    width: 328px;
     border: 0.5px grey solid;
-    padding: 6px;
+    padding: 8px;
     text-align: center;
     margin-top: 10px;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
 }
 .log{
     text-decoration: none;
-    color:rgb(12, 94, 182);
+    color:rgb(0, 149, 246);
+font-weight: 600;
+}
+
+.text{
+    text-align: center;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+.appstore{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.appstore img{
+    width:140px;
+    height:40px;
 }
