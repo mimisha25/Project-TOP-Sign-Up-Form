@@ -159,7 +159,25 @@ button img {
 
 
 
-
+/* Validations of input */
+input:valid{
+    background-image: url(./images/check.png);
+    background-size: 23px;
+    background-position: 245px;
+    background-repeat: no-repeat;
+}
+input:user-invalid{
+    background-image: url(./images/invalid.png);
+    background-size: 22px;
+    background-position: 245px;
+    background-repeat: no-repeat;
+}
+.input_box input:focus+label,
+.input_box input:valid+label,
+.input_box input:user-invalid+label{
+    top: 1px;
+    font-size: 10px;
+}
 
 
 
